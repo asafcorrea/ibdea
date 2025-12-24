@@ -1,0 +1,48 @@
+/* =========================
+   VARIABLES DE DISEÑO (UX)
+   ========================= */
+
+/* 
+Colores sobrios y confiables.
+Azul transmite confianza y calma.
+Puedes cambiar solo aquí todo el sitio.
+*/
+:root {
+  --color-principal: #1f3a5f; /* Azul profundo */
+  --color-secundario: #f5f7fa; /* Fondo claro */
+  --color-texto: #222;
+  --color-texto-claro: #ffffff;
+}
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--color-secundario);
+}
+
+/* Limita el ancho para buena lectura */
+.contenedor {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Títulos claros y jerárquicos */
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 65ch; /* UX: evita líneas demasiado largas */
+}

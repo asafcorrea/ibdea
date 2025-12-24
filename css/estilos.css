@@ -14,7 +14,7 @@ body {
 }
 
 .hero {
-  background-image: url('../imagenes/iglesia.jpg');
+  background-image: url('../imagenes/fondo_del_sitio_web.png');
   background-size: cover;
   background-position: center;
   min-height: 70vh;

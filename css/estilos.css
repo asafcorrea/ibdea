@@ -56,37 +56,53 @@ body {
   text-align: center;
 }
 
-/* Botón claro y accesible */
+/* BOTÓN YOUTUBE */
 .boton-youtube {
   display: inline-block;
   margin: 1.5rem 0;
-  padding: 0.8rem 1.6rem;
+  padding: 0.9rem 1.8rem;
 
   background: #cc0000; /* Color YouTube */
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
 
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .boton-youtube:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Video responsive */
-.video {
+/* VIDEO PRINCIPAL */
+.video-principal {
   position: relative;
-  padding-top: 56.25%; /* 16:9 */
-  border-radius: 12px;
+  padding-top: 56.25%;
+  border-radius: 14px;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
-.video iframe {
+.video-principal iframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  border: 0;
+}
+
+/* VIDEOS SECUNDARIOS */
+.videos-secundarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.videos-secundarios iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
   border: 0;
 }
